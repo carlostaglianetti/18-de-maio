@@ -1,0 +1,106 @@
+/* Reset básico para evitar erros de margem */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #222;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Cabeçalho principal */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), #ffcc00;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #003366;
+    border-bottom: 8px solid #ff9900;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.flower {
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+/* Conteúdo */
+.main-content {
+    max-width: 900px;
+    margin: -50px auto 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #003366;
+    color: white;
+}
+
+.highlight h2 {
+    color: #ffcc00;
+}
+
+/* Caixa do Disque 100 */
+.phone-box {
+    margin-top: 20px;
+    background: #ffcc00;
+    color: #003366;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.phone-box strong {
+    display: block;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #eee;
+    color: #666;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 700px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+}
